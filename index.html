@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>todo list</title>
+ 
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  
+  
+  <link rel="stylesheet" href="css/style.css">
+ 
+</head>
+<body>
+
+
+
+<header class="position-relative w-100">
+  <div class="d-flex p-5 align-items-center">
+ 
+ <h1 class="mainheader fw-bold ms-2">TO DO LIST</h1>
+  </div>
+<div class="d-flex justify-content-between align-items-center w-50 mx-auto">
+  
+    <input type="text" placeholder="enter your task here "  class="form-control w-50 " id="newtask">
+<button onclick="addtask()" type= "button" id="add"class="btn btn-primary ms-2">add</button>
+<button  type= "button" id="update" class="btn btn-info ms-2 d-none" onclick="updatetask()">update</button>
+</div>
+</header>
+
+<section class="gradient-custom-2 pt-5">
+  <div class="container py-5">
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col-md-12 col-lg-10">
+<div class="card mask-custom">
+  <div class="card-body p-4 text-white ">
+    <table class="table text-white mb-0 text-center rounded-2 overflow-hidden"> 
+<thead>
+ <tr>
+  <th>task no.</th>
+  <th>task</th>
+  <th>update</th>
+  <th>delete</th>
+ </tr>
+</thead>
+<tbody id="tasks">
+  
+
+</tbody>
+ 
+    
+    </table>
+  </div>
+
+</div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+
+</section>
+
+
+    <script src="js/index.js"></script>
+</body>
+</html>
